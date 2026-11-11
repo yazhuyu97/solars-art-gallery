@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Solar's Art Gallery - About Page Styles (about.css)
+   ========================================================================== */
+
+.about-hero-section {
+  padding: 60px 0 80px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Portrait Card */
+.about-portrait-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 100px;
+}
+
+.portrait-avatar-wrapper {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 4px solid var(--color-surface);
+}
+
+.portrait-avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait-name {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 4px;
+}
+
+.portrait-role {
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portrait-badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* About Narrative */
+.about-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.about-block-title {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.5rem;
+  color: var(--color-text-main);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-block-title::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-pink-accent);
+  margin-top: 8px;
+  border-radius: var(--radius-full);
+}
+
+.about-text {
+  font-size: 0.96rem;
+  color: var(--color-text-muted);
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+/* Artist Statement Quote Box */
+.statement-box {
+  background-color: var(--color-surface);
+  border-left: 3px solid var(--color-green-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 32px 36px;
+  box-shadow: var(--shadow-sm);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.statement-quote {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: var(--color-text-main);
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+/* Materials & Tools Showcase */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tool-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tool-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tool-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text-main);
+}
+
+.tool-items-list {
+  list-style: none;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-items-list li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.tool-items-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-pink-accent);
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-portrait-card {
+    position: static;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF8F5" />
+      <stop offset="50%" stop-color="#F7ECE8" />
+      <stop offset="100%" stop-color="#EBE2DB" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="60%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#FCEEE6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#F7ECE8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad1)" />
+  <rect width="800" height="1000" fill="url(#sunGlow)" />
+
+  <!-- Abstract Camellia & Botanical Shapes -->
+  <g transform="translate(400, 520)">
+    <!-- Stem & Leaves -->
+    <path d="M -10,350 Q 20,150 -30,-40" fill="none" stroke="#6F8071" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 0,220 Q 80,180 120,100 Q 60,80 -5,170 Z" fill="#889C8A" opacity="0.55" />
+    <path d="M -20,120 Q -100,70 -130,-10 Q -60,0 -15,80 Z" fill="#758877" opacity="0.5" />
+    <path d="M -10,-10 Q -70,-80 -50,-160 Q 0,-100 -5,-30 Z" fill="#9FB0A1" opacity="0.6" />
+
+    <!-- Flower Petals Outer -->
+    <circle cx="-50" cy="-60" r="95" fill="#FCECE9" opacity="0.85" />
+    <circle cx="50" cy="-70" r="105" fill="#FDF3F0" opacity="0.9" />
+    <circle cx="70" cy="30" r="90" fill="#F6DDD7" opacity="0.8" />
+    <circle cx="-40" cy="50" r="95" fill="#FAEEEA" opacity="0.85" />
+    <circle cx="0" cy="-120" r="85" fill="#FFF8F5" opacity="0.95" />
+
+    <!-- Inner Core & Stamens -->
+    <circle cx="10" cy="-20" r="60" fill="#F9E0D8" opacity="0.9" />
+    <circle cx="15" cy="-20" r="35" fill="#F0C2B4" opacity="0.95" />
+    <circle cx="8" cy="-22" r="14" fill="#E8B072" opacity="0.9" />
+
+    <!-- Soft Pollen Dots -->
+    <circle cx="2" cy="-35" r="4" fill="#DCA360" />
+    <circle cx="28" cy="-26" r="3.5" fill="#DCA360" />
+    <circle cx="24" cy="-10" r="4" fill="#DCA360" />
+    <circle cx="5" cy="-8" r="3.5" fill="#DCA360" />
+  </g>
+
+  <!-- Frame & Label -->
+  <rect x="30" y="30" width="740" height="940" fill="none" stroke="#E3D7CF" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+  <text x="400" y="910" text-anchor="middle" font-family="'Noto Serif TC', serif" font-size="20" fill="#7D746D" letter-spacing="4">晨光與白茶花</text>
+  <text x="400" y="935" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#A89E97" letter-spacing="3">TRADITIONAL WATERCOLOR</text>
+</svg>

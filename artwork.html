@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品詳情 Artwork Detail｜Solar's Art Gallery</title>
+  <meta name="description" content="查看 Solar 繪畫作品詳細資訊，包含創作年份、媒材尺寸規格、創作概念與高解析放大檢視。">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/artwork.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span class="logo-main">Solar's Art Gallery</span>
+        <span class="logo-sub">Portfolio & Works</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="切換選單" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link">
+              首頁
+              <span class="nav-sub-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html" class="nav-link active">
+              作品集
+              <span class="nav-sub-label">Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">
+              關於創作
+              <span class="nav-sub-label">About</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Artwork Detail Root -->
+  <main class="artwork-detail-section">
+    <div class="container" id="artwork-detail-root">
+      <!-- Populated dynamically by artwork.js -->
+      <div style="text-align: center; padding: 100px 0; color: var(--color-text-light);">
+        作品載入中...
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Solar's Art Gallery</div>
+        <p class="footer-tagline">
+          Crafting quiet moments through colors and gentle light.<br>
+          以色彩與溫柔微光，凝結生活靜謐片刻。
+        </p>
+        <ul class="footer-nav">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="gallery.html">作品集</a></li>
+          <li><a href="about.html">關於創作</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Solar. All rights reserved.</span>
+        <a href="#top" class="back-to-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          返回頂部 (Top)
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/artwork.js"></script>
+</body>
+</html>

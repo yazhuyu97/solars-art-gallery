@@ -1,0 +1,80 @@
+[
+  {
+    "id": "artwork-001",
+    "title": "晨光與白茶花",
+    "titleEn": "Morning Light & Camellias",
+    "category": "traditional",
+    "categoryLabel": "手繪 Traditional",
+    "year": 2024,
+    "medium": "透明水彩、Arches 300g 冷壓水彩紙",
+    "dimensions": "260 × 380 mm",
+    "image": "assets/images/artworks/artwork-001.svg",
+    "featured": true,
+    "description": "清晨熹微的陽光穿透薄霧，落在窗前盛開的白茶花瓣上。藉由多層薄塗水彩營造晨間清澈微涼的空氣感，捕捉光影悄然流轉的靜謐瞬間。"
+  },
+  {
+    "id": "artwork-002",
+    "title": "雨後松風",
+    "titleEn": "Pine Breeze After Rain",
+    "category": "traditional",
+    "categoryLabel": "手繪 Traditional",
+    "year": 2024,
+    "medium": "日本墨汁、礦物顏料、和紙",
+    "dimensions": "300 × 450 mm",
+    "image": "assets/images/artworks/artwork-002.svg",
+    "featured": true,
+    "description": "以淡雅的鼠尾草綠與水墨暈染，描繪午後山雨初歇、松針滴落水珠的幽靜山景。畫面保留大量呼吸留白，呈現日式幽玄與洗練。"
+  },
+  {
+    "id": "artwork-003",
+    "title": "靜物與檸檬",
+    "titleEn": "Still Life with Lemons",
+    "category": "traditional",
+    "categoryLabel": "手繪 Traditional",
+    "year": 2023,
+    "medium": "重質壓克力顏料、亞麻畫布",
+    "dimensions": "300 × 300 mm",
+    "image": "assets/images/artworks/artwork-003.svg",
+    "featured": false,
+    "description": "暖黃色調的陶罐與熟成檸檬，在木質餐桌上沈澱出質樸的溫度。運用厚塗筆觸展現陶瓷肌理與果皮微光，記錄平凡日常的溫馨詩意。"
+  },
+  {
+    "id": "artwork-004",
+    "title": "浮光之境",
+    "titleEn": "Realm of Floating Lights",
+    "category": "digital",
+    "categoryLabel": "電繪 Digital",
+    "year": 2024,
+    "medium": "Clip Studio Paint / Wacom Intuos",
+    "dimensions": "3840 × 4800 px (300 DPI)",
+    "image": "assets/images/artworks/artwork-004.svg",
+    "featured": true,
+    "description": "在夜幕降臨與黎明交界處，泛著柔和紫藍霞光的海潮與懸浮光點。以數位漸層與粒子筆刷融合夢境與現實，營造包容萬物的平靜氛圍。"
+  },
+  {
+    "id": "artwork-005",
+    "title": "綠意溫室",
+    "titleEn": "The Botanical Haven",
+    "category": "digital",
+    "categoryLabel": "電繪 Digital",
+    "year": 2023,
+    "medium": "Procreate / iPad Pro",
+    "dimensions": "3000 × 4000 px (300 DPI)",
+    "image": "assets/images/artworks/artwork-005.svg",
+    "featured": true,
+    "description": "以幾何拱型溫室與層疊的龜背芋、蕨類植物構築的小世界。柔和的薄荷粉綠色調，讓觀者彷彿能聽見葉尖露水滑落的清脆聲響。"
+  },
+  {
+    "id": "artwork-006",
+    "title": "晚霞歸途",
+    "titleEn": "Sunset Homeward",
+    "category": "digital",
+    "categoryLabel": "電繪 Digital",
+    "year": 2022,
+    "medium": "Clip Studio Paint",
+    "dimensions": "3840 × 2160 px (300 DPI)",
+    "image": "assets/images/artworks/artwork-006.svg",
+    "featured": false,
+    "description": "放學與下班途中遇見的杏桃色晚霞。電線桿的幾何線條切割著粉紫色的天空，記錄生活旅途中無數個令人留戀的片刻。"
+  }
+]

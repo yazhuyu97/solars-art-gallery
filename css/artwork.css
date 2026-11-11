@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Solar's Art Gallery - Artwork Detail Styles (artwork.css)
+   ========================================================================== */
+
+.artwork-detail-section {
+  padding: 40px 0 80px;
+}
+
+/* Breadcrumb Navigation */
+.artwork-breadcrumb {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.artwork-breadcrumb a:hover {
+  color: var(--color-text-main);
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-light);
+}
+
+/* Main Detail Layout */
+.artwork-detail-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Artwork Image Presentation */
+.artwork-image-container {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.artwork-image-wrapper {
+  position: relative;
+  cursor: zoom-in;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.artwork-image-wrapper img {
+  max-height: 70vh;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-normal);
+}
+
+.artwork-image-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+.image-hint {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.05em;
+}
+
+/* Artwork Information Panel */
+.artwork-info-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.artwork-year {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.artwork-title-main {
+  font-family: "Noto Serif TC", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-main);
+  margin-bottom: 6px;
+}
+
+.artwork-title-sub {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 28px;
+}
+
+/* Specifications Table */
+.artwork-specs-list {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.spec-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: baseline;
+  font-size: 0.88rem;
+}
+
+.spec-label {
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.spec-value {
+  color: var(--color-text-main);
+}
+
+/* Description */
+.artwork-description-box {
+  margin-bottom: 36px;
+}
+
+.desc-title {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 12px;
+}
+
+.desc-content {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+/* Navigation between artworks */
+.artwork-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: 28px;
+  margin-top: 20px;
+}
+
+.nav-art-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.nav-art-btn:hover {
+  color: var(--color-text-main);
+  transform: translateX(-2px);
+}
+
+.nav-art-btn.next:hover {
+  transform: translateX(2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .artwork-detail-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .artwork-title-main {
+    font-size: 1.8rem;
+  }
+}

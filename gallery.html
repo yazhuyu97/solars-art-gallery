@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 Gallery｜Solar's Art Gallery</title>
+  <meta name="description" content="瀏覽 Solar 的全部繪畫作品，包含手繪水彩、和紙水墨、壓克力及數位繪畫，支援媒材與年份篩選。">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span class="logo-main">Solar's Art Gallery</span>
+        <span class="logo-sub">Portfolio & Works</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="切換選單" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link">
+              首頁
+              <span class="nav-sub-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html" class="nav-link active">
+              作品集
+              <span class="nav-sub-label">Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">
+              關於創作
+              <span class="nav-sub-label">About</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Main Section -->
+  <main class="section-padding">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="sub-heading">ARTWORKS COLLECTION</span>
+        <h1 class="main-heading">作品集</h1>
+      </div>
+
+      <!-- Controls & Filters -->
+      <div class="gallery-controls">
+        <div class="controls-row">
+          <!-- Category Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-btn active" data-category="all" role="tab">全部 All</button>
+            <button class="filter-btn" data-category="traditional" role="tab">手繪 Traditional</button>
+            <button class="filter-btn" data-category="digital" role="tab">電繪 Digital</button>
+          </div>
+
+          <!-- Filter Actions: Year & Sort -->
+          <div class="filter-actions">
+            <!-- Year Select -->
+            <div class="select-wrap">
+              <select id="year-select" class="select-custom" aria-label="依年份篩選">
+                <option value="all">所有年份 (All Years)</option>
+              </select>
+              <svg class="select-arrow" viewBox="0 0 10 6">
+                <polygon points="0,0 10,0 5,6"/>
+              </svg>
+            </div>
+
+            <!-- Sort Toggle Button -->
+            <button id="sort-btn" class="sort-btn" title="切換年份排列順序">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+              <span id="sort-order-text">由新至舊</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Status Count Bar -->
+        <div class="gallery-status-bar">
+          <span id="artwork-count">載入中...</span>
+          <span style="font-size: 0.8rem; letter-spacing: 0.05em;">CLICK TO VIEW DETAILS</span>
+        </div>
+      </div>
+
+      <!-- Artworks Grid Container -->
+      <div class="artworks-grid" id="gallery-grid">
+        <!-- Rendered by gallery.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Solar's Art Gallery</div>
+        <p class="footer-tagline">
+          Crafting quiet moments through colors and gentle light.<br>
+          以色彩與溫柔微光，凝結生活靜謐片刻。
+        </p>
+        <ul class="footer-nav">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="gallery.html">作品集</a></li>
+          <li><a href="about.html">關於創作</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Solar. All rights reserved.</span>
+        <a href="#top" class="back-to-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          返回頂部 (Top)
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

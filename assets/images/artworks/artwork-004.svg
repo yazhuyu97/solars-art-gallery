@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="twilightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE7F5" />
+      <stop offset="50%" stop-color="#D7E0F2" />
+      <stop offset="100%" stop-color="#C2CEE8" />
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#E9EFFB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#C2CEE8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#twilightGrad)" />
+  <circle cx="400" cy="400" r="280" fill="url(#moonGlow)" />
+
+  <!-- Moon Crescent -->
+  <circle cx="400" cy="380" r="110" fill="#FFFFFF" opacity="0.95" />
+  <circle cx="435" cy="360" r="105" fill="#DCE3F4" opacity="0.95" />
+
+  <!-- Floating Particles & Stars -->
+  <circle cx="280" cy="240" r="4" fill="#FFFFFF" opacity="0.8" />
+  <circle cx="520" cy="220" r="5" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="480" cy="540" r="6" fill="#FDECE8" opacity="0.85" />
+  <circle cx="310" cy="480" r="4.5" fill="#FFFFFF" opacity="0.75" />
+  <circle cx="230" cy="360" r="3.5" fill="#FFF9E6" opacity="0.85" />
+  <circle cx="580" cy="420" r="4" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="360" cy="620" r="5" fill="#FFF0ED" opacity="0.7" />
+
+  <!-- Dreamy Ocean / Cloud Waves -->
+  <path d="M-50,680 C180,630 320,730 540,670 C700,630 780,690 850,670 L850,1050 L-50,1050 Z" fill="#9FB3DA" opacity="0.5" />
+  <path d="M-50,750 C150,710 360,780 580,730 C720,700 800,760 850,740 L850,1050 L-50,1050 Z" fill="#7E96C4" opacity="0.65" />
+  <path d="M-50,830 C200,800 400,850 620,810 C750,790 820,830 850,820 L850,1050 L-50,1050 Z" fill="#5F76A6" opacity="0.75" />
+
+  <rect x="30" y="30" width="740" height="940" fill="none" stroke="#B8C5E0" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+  <text x="400" y="910" text-anchor="middle" font-family="'Noto Serif TC', serif" font-size="20" fill="#4B5B7E" letter-spacing="4">浮光之境</text>
+  <text x="400" y="935" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7586AB" letter-spacing="3">DIGITAL ILLUSTRATION</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avatarBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCF6F0" />
+      <stop offset="70%" stop-color="#F5E8DE" />
+      <stop offset="100%" stop-color="#EAD9CB" />
+    </radialGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#avatarBg)" stroke="#E0D2C3" stroke-width="3" />
+
+  <!-- Artist Silhouette / Gentle Aesthetic -->
+  <g transform="translate(200, 200)">
+    <!-- Shoulders -->
+    <path d="M -110,160 C -90,90 -50,75 -35,70 C -10,65 10,65 35,70 C 50,75 90,90 110,160 Z" fill="#9DAFA2" opacity="0.9" />
+    <!-- Collar / Scarf -->
+    <path d="M -30,75 Q 0,110 30,75 Q 0,65 -30,75 Z" fill="#F4EDE6" />
+    <!-- Neck -->
+    <rect x="-18" y="25" width="36" height="55" rx="10" fill="#F7DDD0" />
+    <!-- Face / Head -->
+    <ellipse cx="0" cy="0" rx="60" ry="70" fill="#FCE9DE" />
+    <!-- Hair back -->
+    <path d="M -60,0 C -65,-70 -30,-80 0,-80 C 30,-80 65,-70 60,0 C 60,50 40,90 40,90 C 25,95 -25,95 -40,90 C -40,90 -60,50 -60,0 Z" fill="#4A3F35" />
+    <ellipse cx="0" cy="-5" rx="52" ry="60" fill="#FCE9DE" />
+    <!-- Hair Bangs -->
+    <path d="M -55,-20 C -40,-65 -20,-75 0,-75 C 20,-75 40,-65 55,-20 C 35,-45 10,-50 0,-45 C -10,-50 -35,-45 -55,-20 Z" fill="#4A3F35" />
+    <path d="M -50,-10 C -55,30 -50,60 -45,70 C -42,50 -45,20 -40,-5 Z" fill="#4A3F35" />
+    <path d="M 50,-10 C 55,30 50,60 45,70 C 42,50 45,20 40,-5 Z" fill="#4A3F35" />
+
+    <!-- Eyes (Gentle, warm smile) -->
+    <path d="M -30,-2 Q -22,-10 -14,-2" fill="none" stroke="#5E4E42" stroke-width="3" stroke-linecap="round" />
+    <path d="M 14,-2 Q 22,-10 30,-2" fill="none" stroke="#5E4E42" stroke-width="3" stroke-linecap="round" />
+    <!-- Cheeks (Blush) -->
+    <circle cx="-30" cy="12" r="10" fill="#F5A89B" opacity="0.45" />
+    <circle cx="30" cy="12" r="10" fill="#F5A89B" opacity="0.45" />
+    <!-- Smile -->
+    <path d="M -8,22 Q 0,28 8,22" fill="none" stroke="#87584E" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Paintbrush in Hand -->
+    <g transform="translate(65, 80) rotate(-35)">
+      <rect x="-4" y="-80" width="8" height="120" rx="3" fill="#B38E6A" />
+      <rect x="-5" y="-95" width="10" height="18" fill="#C5CED1" />
+      <path d="M -5,-95 C -4,-115 4,-115 5,-95 Z" fill="#758B79" />
+    </g>
+  </g>
+</svg>

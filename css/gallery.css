@@ -1,0 +1,183 @@
+/* ==========================================================================
+   Solar's Art Gallery - Gallery Styles (gallery.css)
+   ========================================================================== */
+
+/* Gallery Controls */
+.gallery-controls {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Category Filter Tabs */
+.filter-tabs {
+  display: inline-flex;
+  background-color: var(--color-surface-subtle);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  gap: 4px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: var(--color-text-main);
+}
+
+.filter-btn.active {
+  background-color: var(--color-surface);
+  color: var(--color-text-main);
+  box-shadow: var(--shadow-sm);
+  font-weight: 500;
+}
+
+/* Year & Sort Dropdowns */
+.filter-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-custom {
+  appearance: none;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 8px 36px 8px 18px;
+  font-size: 0.85rem;
+  color: var(--color-text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.select-custom:hover,
+.select-custom:focus {
+  border-color: var(--color-border-hover);
+  outline: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 10px;
+  height: 6px;
+  fill: var(--color-text-muted);
+}
+
+.sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sort-btn:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text-main);
+}
+
+/* Results Count */
+.gallery-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+/* Artwork Grid Layout */
+.artworks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* Empty State */
+.empty-gallery {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--color-text-muted);
+}
+
+.empty-gallery svg {
+  margin: 0 auto 16px;
+  width: 48px;
+  height: 48px;
+  stroke: var(--color-text-light);
+}
+
+/* Tablet & Mobile Breakpoints */
+@media (max-width: 992px) {
+  .artworks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .artworks-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+
+  .filter-actions {
+    justify-content: space-between;
+  }
+
+  .select-custom, .sort-btn {
+    flex: 1;
+  }
+}
